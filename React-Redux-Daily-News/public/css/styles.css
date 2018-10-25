@@ -1,0 +1,336 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/***************************
+    Header and Footer
+****************************/
+header,
+footer {
+    font-family: 'Sedgwick Ave Display', cursive;
+    box-sizing: border-box;
+    border-bottom: 1px solid lightblue;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 20px;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+/***************************
+        Latest NEWS
+****************************/
+.home_latest {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.home_latest .item .image_cover {
+    height: 300px;
+    background-size: cover !important;
+    background-position: center center !important;
+    position: relative;
+}
+
+.home_latest .item .image_cover .description {
+    position: absolute;
+    bottom: 0%;
+}
+
+.home_latest .item .image_cover .description span {
+    padding: 10px;
+    background: #00BCD4;
+    display: inline-block;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.home_latest .item .image_cover .description div {
+    padding: 5px;
+    color: #fff;
+    background: black;
+    opacity: 0.6;
+    width: 40%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+@media screen and (min-width: 600px) {
+    .home_latest {
+        box-sizing: border-box;
+        padding: 0;
+        display: flex;
+    }
+
+    .home_latest .item {
+        width: 50%;
+        flex-direction: row;
+    }
+
+    .home_latest .item .image_cover {
+        height: 350px;
+        width: 100%;
+        background-size: cover !important;
+        background-position: center center !important;
+        position: relative;
+    }
+}
+
+/***************************
+        Other NEWS
+****************************/
+.other_news {
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.other_news h3 {
+    font-weight: 400;
+}
+
+.other_news .item {
+    display: flex;
+    border: 1px solid #e6e6e6;
+    padding: 5px;
+    position: relative;
+}
+
+.other_news .item .left {
+    flex-grow: 1;
+    width: 120px;
+    height: 120px;
+    background-size: cover !important;
+    background-position: center center !important;
+}
+
+.other_news .item .right {
+    width: 80%;
+    padding: 5px 10px;
+}
+
+.other_news .item .right h3 {
+    font-weight: 300;
+    margin: 0;
+    font-size: 18px;
+}
+
+.other_news .item .right .category_tag {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 8px;
+    background-color: #00BCD4;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #fff;
+}
+
+.other_news .item .right .tag {
+    bottom: 6px;
+    position: absolute;
+}
+
+.other_news .item .right .tag span {
+    margin-right: 20px;
+    font-size: 15px;
+    color: #607db8;
+}
+
+.other_news .item .right .tag span i {
+    margin-right: 5px;
+}
+
+/***************************
+       Awesome Gallery 
+****************************/
+.awesome_gallery {
+    text-align: center;
+}
+
+.awesome_gallery h2 {
+    font-weight: 400;
+    padding: 10px;
+    margin-bottom: 0;
+}
+
+.awesome_gallery .gallery_item .image {
+    background-size: cover !important;
+    background-position: center center !important;
+    height: 200px;
+    width: 200px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.gallery_item .image h3 {
+    position: absolute;
+    color: #fff;
+    font-size: 18px;
+    bottom: 10px;
+    left: 10px;
+    margin: 0;
+}
+
+@media screen and (min-width: 600px) {
+    .gallery_item .image {
+        margin: 0 auto;
+        background-size: cover !important;
+        background-position: center center !important;
+        height: 400px !important;
+        width: 400px !important;
+        position: relative;
+        outline-width: none;
+    }
+}
+
+/***************************
+        Specific News
+****************************/
+.news_container .tags {
+    background: #f8f8f8;
+    color: #c2b6b6;
+    padding: 12px;
+    font-size: 14px;
+}
+
+.news_container .tags span {
+    margin-right: 15px;
+}
+
+.news_container .tags span i {
+    margin-right: 5px;
+}
+
+.news_container .top {
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.news_container .top h2 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 32px;
+}
+
+.news_container .top span {
+    margin-top: 20px;
+    font-weight: 300;
+    color: #00BCD4;
+    font-size: 15px;
+    display: inline-block;
+}
+
+.news_container img {
+    width: 100%;
+}
+
+.news_container .body {
+    padding: 20px;
+    font-weight: 300;
+    font-size: 17px;
+}
+
+/***************************
+       Specific Gallery
+****************************/
+.gallery_container .gallery_item h3 {
+    font-weight: 300;
+    text-align: center;
+}
+
+.gallery_container .gallery_item .image {
+    background-size: cover !important;
+    background-position: center center !important;
+    height: 200px;
+    width: 200px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.gallery_container .gallery_item .description {
+    margin: 0 auto;
+    width: 200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #e0e0e0;
+    box-sizing: border-box;
+}
+
+@media screen and (min-width: 600px) {
+    .gallery_container .gallery_item .description {
+        width: 400px !important;
+        margin: 0 auto;
+        padding: 20px;
+        background: #e0e0e0;
+        box-sizing: border-box;
+    }
+}
+
+/***************************
+            Slider
+****************************/
+.outline-none:focus {
+    outline: none !important;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: #00BCD4 !important;
+}
+
+.slick-arrow {
+    margin: 0 15%;
+}
+
+@media screen and (min-width: 600px) {
+    .slick-arrow {
+        margin: 0 15%;
+    }
+}
+
+/***************************
+            Add
+****************************/
+.likeCounter_wrapper {
+    margin-bottom: 20px;
+}
+
+.likeCounter_wrapper .addlike_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.likeCounter_wrapper .addlike_container .btn {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+    background: #eaeaea;
+    color: #607db8;
+    cursor: pointer;
+    border-right: 1px solid #fff;
+}
+
+.likeCounter_wrapper .addlike_container .btn:hover {
+    background: #00BCD4
+}
+
+.likeCounter_wrapper .addlike_container .btn.likes:hover {
+    border-right: 1px solid #fff;
+}
+
+.likeCounter_wrapper .addlike_container .btn.dislikes:hover {
+    border-left: 1px solid #fff;
+}
